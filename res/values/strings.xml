@@ -1,0 +1,25 @@
+<resources>
+	<string name="mapKey">AIzaSyDHHMzPCuzhBkB9Vk4mq4w3U-c5Z5ipgmU</string>
+	<string name="debug">true</string>
+    <string name="app_name">AMN CoWorkingSpace</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Main</string>
+    <string name="titre">AMN COWORKINGSPACE</string>
+    <string name="qsn">Qui sommes nous?</string>
+   	<string name="adh">Adhérer</string>
+    <string name="plan">Itinéraire</string>
+    <string name="phone">Startups et coworkers</string>
+    <string name="calendar">Agenda</string>  
+    <string name="hours">Heures d\'ouverture</string>
+    <string name="startups">Startups</string>
+    <string name="inpulsion">Inpulsion</string>
+    <string name="umu">Urban Motion United</string>
+    <string name="mozci">Mozilla Côte d\'Ivoire</string>
+    <string name="backhome">Retour à l\'accueil </string>  
+    <string name="ctc">Contactez nous en remplissant le formulaire ci dessous. \nNous vous garantissons une réponse dans les 8 heures suivant l\'envoi de votre message</string>  
+    <string name="callInp">0022545029721</string>  
+    <string name="callMozCi">0022545029721</string>  
+    <string name="calUmu">0022545029721</string>  
+    <string name="message_start">Cliquez sur l\'une des icônes ci dessous contacter une start up ou un coworker par téléphone</string>    
+	<string name="map_location">"geo:5.351667,-3.968373?z=17"</string>  
+</resources>

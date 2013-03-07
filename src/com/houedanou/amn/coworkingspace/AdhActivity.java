@@ -22,6 +22,14 @@ public class AdhActivity extends Activity {
         setContentView(R.layout.adh);
         Typeface tf = Typeface.createFromAsset(getAssets(),
                 "fonts/BebasNeue-webfont.ttf");
+        Typeface OS = Typeface.createFromAsset(getAssets(),"fonts/OpenSans.ttf");
+        TextView mi = (TextView) findViewById(R.id.messageintro);
+    	mi.setTypeface(OS);
+        TextView mis = (TextView) findViewById(R.id.sujet);
+     	mis.setTypeface(OS);
+        TextView mss = (TextView) findViewById(R.id.msgsujet);
+     	mss.setTypeface(OS);
+
         TextView tv = (TextView) findViewById(R.id.title);
         	tv.setTypeface(tf);
         Button btnh = (Button) findViewById(R.id.clickHome);

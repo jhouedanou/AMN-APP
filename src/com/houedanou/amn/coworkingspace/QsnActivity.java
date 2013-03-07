@@ -18,6 +18,9 @@ public class QsnActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.qsn);
+        Typeface OS = Typeface.createFromAsset(getAssets(),"fonts/OpenSans.ttf");
+        TextView pr = (TextView) findViewById(R.id.presentation);
+    	pr.setTypeface(OS);
 		 Typeface tf = Typeface.createFromAsset(getAssets(),
 	                "fonts/BebasNeue-webfont.ttf");
 	        TextView tv = (TextView) findViewById(R.id.title);

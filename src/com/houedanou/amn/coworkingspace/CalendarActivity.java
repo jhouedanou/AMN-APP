@@ -34,7 +34,7 @@ public class CalendarActivity extends Activity {
 	        web.getSettings().setJavaScriptEnabled(true);
 	        web.getSettings().setBuiltInZoomControls(true);
 	        web.getSettings().setSupportZoom(true);
-	        web.loadUrl("https://www.google.com/calendar/embed?mode=WEEK&amp;src=brcni005ddk281405ppeea5bdg%40group.calendar.google.com&ctz=Africa/Abidjan");
+	        web.loadUrl("https://www.google.com/calendar/embed?src=brcni005ddk281405ppeea5bdg%40group.calendar.google.com&ctz=Africa/Abidjan");
 	        clickHome();
 
 	    }

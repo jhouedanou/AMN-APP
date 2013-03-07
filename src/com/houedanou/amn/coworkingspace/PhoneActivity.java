@@ -23,10 +23,21 @@ public class PhoneActivity extends Activity {
         setContentView(R.layout.phone);
         Typeface tf = Typeface.createFromAsset(getAssets(),
                 "fonts/BebasNeue-webfont.ttf");
+        Typeface OS = Typeface.createFromAsset(getAssets(),"fonts/OpenSans.ttf");
+        
+        Button btninpulsion = (Button)findViewById(R.id.inpulsion);
+        Button btnumu = (Button)findViewById(R.id.umu);
+        Button btnmozci = (Button)findViewById(R.id.mozci);
+        TextView title = (TextView)findViewById(R.id.title);
+        
         TextView tv = (TextView) findViewById(R.id.title);
         	tv.setTypeface(tf);
         Button btnh = (Button) findViewById(R.id.clickHome);
         	btnh.setTypeface(tf);
+        	btnumu.setTypeface(OS);
+        	btninpulsion.setTypeface(OS);
+        	btnmozci.setTypeface(OS);
+        	title.setTypeface(OS);
         	callInpulsion();
         	callMozCi();
 	        callUmu();	

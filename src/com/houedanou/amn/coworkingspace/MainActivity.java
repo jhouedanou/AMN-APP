@@ -1,6 +1,5 @@
 package com.houedanou.amn.coworkingspace;
 
-import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

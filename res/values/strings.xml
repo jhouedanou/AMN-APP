@@ -15,11 +15,19 @@
     <string name="inpulsion">Inpulsion</string>
     <string name="umu">Urban Motion United</string>
     <string name="mozci">Mozilla Côte d\'Ivoire</string>
+    <string name="nim">Nicola Monti</string>
+    <string name="ss">Social Spot</string>
+    <string name="tracking">Tracking.ci</string>
+    <string name="jl">Jean Luc Houédanou</string>
     <string name="backhome">Retour à l\'accueil </string>  
     <string name="ctc">Contactez nous en remplissant le formulaire ci dessous. \nNous vous garantissons une réponse dans les 8 heures suivant l\'envoi de votre message</string>  
     <string name="callInp">0022545029721</string>  
     <string name="callMozCi">0022545029721</string>  
     <string name="calUmu">0022545029721</string>  
+   	<string name="callNim">0022555612226</string>
+    <string name="callSs">0022540487061</string>
+    <string name="callTracking">0022558703484</string>
+    <string name="callJl">0045029721</string>    
     <string name="message_start">Cliquez sur l\'une des icônes ci dessous contacter une start up ou un coworker par téléphone</string>    
 	<string name="map_location">"geo:5.351667,-3.968373?z=17"</string>  
 </resources>

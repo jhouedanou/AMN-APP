@@ -41,8 +41,64 @@ public class PhoneActivity extends Activity {
         	callInpulsion();
         	callMozCi();
 	        callUmu();	
-        	clickHome();
+        	callTrackingci();
+        	callMonti();
+        	//callSocial();
+        	//calljl();
+	        clickHome();
+        	
         	}
+	
+	 public void callTrackingci(){
+		 	Button button = (Button) findViewById(R.id.tracking);
+				button.setOnClickListener(new OnClickListener() { 
+				  @Override
+				  public void onClick(View arg0) {
+					// custom dialog
+					final Dialog dialog = new Dialog(context);
+					dialog.setContentView(R.layout.pc_trackingci);
+					dialog.setTitle("Inpulsion");
+					dialog.show();
+					Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
+					dialogButton.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022558703484"));
+						        startActivity(i);
+						        Toast.makeText(getApplicationContext(), "Tracking.ci en cours d\'appel", Toast.LENGTH_SHORT).show();
+
+								dialog.dismiss();
+							}
+						});						
+				  }
+				});
+			}	
+	 
+	 public void callMonti(){
+		 	Button button = (Button) findViewById(R.id.nim);
+				button.setOnClickListener(new OnClickListener() { 
+				  @Override
+				  public void onClick(View arg0) {
+					// custom dialog
+					final Dialog dialog = new Dialog(context);
+					dialog.setContentView(R.layout.pc_monti);
+					dialog.setTitle("Inpulsion");
+					dialog.show();
+					Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
+					dialogButton.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022555612226"));
+						        startActivity(i);
+						        Toast.makeText(getApplicationContext(), "Nicola Monti en cours d\'appel", Toast.LENGTH_SHORT).show();
+
+								dialog.dismiss();
+							}
+						});						
+				  }
+				});
+			}	
+	
 	
 	 public void callInpulsion(){
 		 	Button button = (Button) findViewById(R.id.inpulsion);

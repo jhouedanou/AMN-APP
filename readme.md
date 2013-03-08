@@ -19,11 +19,6 @@ A venir dans la version 6
 - Ajout du flux rss du Blog du CoworkingSpace;
 - Ajout de la section partenaires;
 - Ajout de la  le flux RSS du blog du coworkingspace;
-- Ajout des profils de 
-	- Tracking.ci, 
-	- Nicolas Monti, 
-	- Social Spot,
-	- Jean Luc Houedanou 
 - Ajout d'une icone AMN
 - Remplacement TypeFace Open Sans par Droid Sans.
 

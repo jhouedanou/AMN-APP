@@ -3,7 +3,8 @@ AMN APP
 
 Pr&eacute;sentation
 -------------------
-Une app android pour le coworkingspace d'AMN (http://amncoworkingspace.com)
+Une app basique pour android 2.3 + pour le coworkingspace d'AMN (http://amncoworkingspace.com)
+
 
 A venir dans la version 6
 --------------------------
@@ -24,3 +25,11 @@ A venir dans la version 6
 	- Social Spot,
 	- Jean Luc Houedanou 
 - Remplacement TypeFace Open Sans par Droid Sans.
+
+Remerciements
+--------------------------
+
+- Regis Bamba (https://github.com/regisbamba ) pour le code source de l'app de la constitution ivoirienne (utile pour le lien entre views et activités);
+- Nescafé - que serais je sans toi.. 
+
+- Version iOS et Blackberry disponible d'ici a fin mai.

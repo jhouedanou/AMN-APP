@@ -24,6 +24,7 @@ A venir dans la version 6
 	- Nicolas Monti, 
 	- Social Spot,
 	- Jean Luc Houedanou 
+- Ajout d'une icone AMN
 - Remplacement TypeFace Open Sans par Droid Sans.
 
 Remerciements

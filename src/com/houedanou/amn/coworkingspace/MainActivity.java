@@ -19,26 +19,24 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        Typeface OS = Typeface.createFromAsset(getAssets(),"fonts/OpenSans.ttf");
+        Typeface OS = Typeface.createFromAsset(getAssets(),"fonts/Aller_Bd.ttf");        
         Button btnqsn = (Button)findViewById(R.id.qsn);
         Button btnadh = (Button)findViewById(R.id.adh);
         Button btnplan = (Button)findViewById(R.id.plan);
         Button btnphone = (Button)findViewById(R.id.phone);
         Button btncalendar = (Button)findViewById(R.id.calendar);
         Button btnhours = (Button)findViewById(R.id.hours);
-
-        btnqsn.setTypeface(OS);
-        btnadh.setTypeface(OS);
-        btnplan.setTypeface(OS);
-        btnphone.setTypeface(OS);
-        btncalendar.setTypeface(OS);
-        btnhours.setTypeface(OS);
-        
         Typeface tf = Typeface.createFromAsset(getAssets(),
                 "fonts/BebasNeue-webfont.ttf");
         TextView tv = (TextView) findViewById(R.id.title);
         	tv.setTypeface(tf);
-        	switchqsn();
+            btnqsn.setTypeface(tf);
+        	btnadh.setTypeface(tf);
+             btnplan.setTypeface(tf);
+             btnphone.setTypeface(tf);
+             btncalendar.setTypeface(tf);
+             btnhours.setTypeface(tf);
+             switchqsn();
         	switchadh();
         	switchcal();
         	switchphone();

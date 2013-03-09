@@ -23,82 +23,114 @@ public class PhoneActivity extends Activity {
         setContentView(R.layout.phone);
         Typeface tf = Typeface.createFromAsset(getAssets(),
                 "fonts/BebasNeue-webfont.ttf");
-        Typeface OS = Typeface.createFromAsset(getAssets(),"fonts/OpenSans.ttf");
-        
+        Typeface OS = Typeface.createFromAsset(getAssets(),
+                "fonts/BebasNeue-webfont.ttf");
         Button btninpulsion = (Button)findViewById(R.id.inpulsion);
         Button btnumu = (Button)findViewById(R.id.umu);
         Button btnmozci = (Button)findViewById(R.id.mozci);
+        Button btnim = (Button)findViewById(R.id.nim);
+        Button btnss = (Button)findViewById(R.id.ss);
+        Button btntci = (Button)findViewById(R.id.tracking);
+        Button btnjl = (Button)findViewById(R.id.jl);
+        Button btnamn = (Button)findViewById(R.id.amn);
+        Button btnh = (Button) findViewById(R.id.clickHome);
+
         TextView title = (TextView)findViewById(R.id.title);
         
         TextView tv = (TextView) findViewById(R.id.title);
         	tv.setTypeface(tf);
-        Button btnh = (Button) findViewById(R.id.clickHome);
+        	
         	btnh.setTypeface(tf);
         	btnumu.setTypeface(OS);
         	btninpulsion.setTypeface(OS);
         	btnmozci.setTypeface(OS);
-        	title.setTypeface(OS);
+        	btnim.setTypeface(OS);
+        	btnss.setTypeface(OS);
+        	btntci.setTypeface(OS);
+        	btnjl.setTypeface(OS);
+        	btnamn.setTypeface(OS);
+        	
+        	
         	callInpulsion();
         	callMozCi();
 	        callUmu();	
-        	callTrackingci();
         	callMonti();
-        	//callSocial();
-        	//calljl();
-	        clickHome();
+        	callSocial();
+        	callTracking();
+        	callJl();
+        	callamn();
+
+        	clickHome();
         	
         	}
 	
-	 public void callTrackingci(){
-		 	Button button = (Button) findViewById(R.id.tracking);
-				button.setOnClickListener(new OnClickListener() { 
-				  @Override
-				  public void onClick(View arg0) {
-					// custom dialog
-					final Dialog dialog = new Dialog(context);
-					dialog.setContentView(R.layout.pc_trackingci);
-					dialog.setTitle("Inpulsion");
-					dialog.show();
-					Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
-					dialogButton.setOnClickListener(new OnClickListener() {
-							@Override
-							public void onClick(View v) {
-								Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022558703484"));
-						        startActivity(i);
-						        Toast.makeText(getApplicationContext(), "Tracking.ci en cours d\'appel", Toast.LENGTH_SHORT).show();
+	public void callamn(){
+	 	Button button = (Button) findViewById(R.id.amn);
+			button.setOnClickListener(new OnClickListener() { 
+			  @Override
+			  public void onClick(View arg0) {
+				// custom dialog
+				final Dialog dialog = new Dialog(context);
+				dialog.setContentView(R.layout.pc_amn);
+				dialog.setTitle("AfricainCorp Media Network");
+				dialog.show();
+				Button dialogButton = (Button) dialog.findViewById(R.id.callamn);
+				dialogButton.setOnClickListener(new OnClickListener() {
+						@Override
+						public void onClick(View v) {
+							Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022522471505"));
+					        startActivity(i);
+					        Toast.makeText(getApplicationContext(), "AfricainCorp Media Network d\'appel", Toast.LENGTH_SHORT).show();
 
-								dialog.dismiss();
-							}
-						});						
-				  }
-				});
-			}	
-	 
-	 public void callMonti(){
-		 	Button button = (Button) findViewById(R.id.nim);
-				button.setOnClickListener(new OnClickListener() { 
-				  @Override
-				  public void onClick(View arg0) {
-					// custom dialog
-					final Dialog dialog = new Dialog(context);
-					dialog.setContentView(R.layout.pc_monti);
-					dialog.setTitle("Inpulsion");
-					dialog.show();
-					Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
-					dialogButton.setOnClickListener(new OnClickListener() {
-							@Override
-							public void onClick(View v) {
-								Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022555612226"));
-						        startActivity(i);
-						        Toast.makeText(getApplicationContext(), "Nicola Monti en cours d\'appel", Toast.LENGTH_SHORT).show();
-
-								dialog.dismiss();
-							}
-						});						
-				  }
-				});
-			}	
+							dialog.dismiss();
+						}
+					});
+				Button dialogButton2 = (Button) dialog.findViewById(R.id.callamn2);
+				dialogButton2.setOnClickListener(new OnClickListener() {
+						@Override
+						public void onClick(View v) {
+							Intent intent = new Intent(Intent.ACTION_VIEW, 
+								     Uri.parse("http://africaincorpmedia.co"));	
+							startActivity(intent);dialog.dismiss();
+						}
+					});
+			  }
+			});
+		}	
 	
+	 public void callJl(){
+		 	Button button = (Button) findViewById(R.id.jl);
+				button.setOnClickListener(new OnClickListener() { 
+				  @Override
+				  public void onClick(View arg0) {
+					// custom dialog
+					final Dialog dialog = new Dialog(context);
+					dialog.setContentView(R.layout.pc_jlh);
+					dialog.setTitle("Inpulsion");
+					dialog.show();
+					Button dialogButton = (Button) dialog.findViewById(R.id.callboss);
+					dialogButton.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022545029721"));
+						        startActivity(i);
+						        Toast.makeText(getApplicationContext(), "Jean Luc Houédanou d\'appel", Toast.LENGTH_SHORT).show();
+
+								dialog.dismiss();
+							}
+						});
+					Button dialogButton2 = (Button) dialog.findViewById(R.id.callboss2);
+					dialogButton2.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent intent = new Intent(Intent.ACTION_VIEW, 
+									     Uri.parse("http://houedanou.com"));	
+								startActivity(intent);dialog.dismiss();
+							}
+						});
+				  }
+				});
+			}
 	
 	 public void callInpulsion(){
 		 	Button button = (Button) findViewById(R.id.inpulsion);
@@ -120,10 +152,86 @@ public class PhoneActivity extends Activity {
 
 								dialog.dismiss();
 							}
-						});						
+						});
+					Button dialogButton2 = (Button) dialog.findViewById(R.id.dialogButtonOK2);
+					dialogButton2.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent intent = new Intent(Intent.ACTION_VIEW, 
+									     Uri.parse("http://inpulsion.net"));	
+								startActivity(intent);dialog.dismiss();
+							}
+						});
 				  }
 				});
 			}	
+	 public void callSocial(){
+		 	Button button = (Button) findViewById(R.id.ss);
+				button.setOnClickListener(new OnClickListener() { 
+				  @Override
+				  public void onClick(View arg0) {
+					// custom dialog
+					final Dialog dialog = new Dialog(context);
+					dialog.setContentView(R.layout.pc_socialspot);
+					dialog.setTitle("Social Spot");
+					dialog.show();
+					Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
+					dialogButton.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022540487061"));
+						        startActivity(i);
+						        Toast.makeText(getApplicationContext(), "Social spot en cours d\'appel", Toast.LENGTH_SHORT).show();
+
+								dialog.dismiss();
+							}
+						});
+					Button dialogButton2 = (Button) dialog.findViewById(R.id.dialogButtonOK2);
+					dialogButton2.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent intent = new Intent(Intent.ACTION_VIEW, 
+									     Uri.parse("http://socialspot.ci"));	
+								startActivity(intent);dialog.dismiss();
+							}
+						});
+				  }
+				});
+			}
+	 
+	 public void callTracking(){
+		 	Button button = (Button) findViewById(R.id.tracking);
+				button.setOnClickListener(new OnClickListener() { 
+				  @Override
+				  public void onClick(View arg0) {
+					// custom dialog
+					final Dialog dialog = new Dialog(context);
+					dialog.setContentView(R.layout.pc_trackingci);
+					dialog.setTitle("Inpulsion");
+					dialog.show();
+					Button dialogButton = (Button) dialog.findViewById(R.id.calltrackingCi);
+					dialogButton.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent i = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022558703484"));
+						        startActivity(i);
+						        Toast.makeText(getApplicationContext(), "Tracking.ci cours d\'appel", Toast.LENGTH_SHORT).show();
+
+								dialog.dismiss();
+							}
+						});
+					Button dialogButton2 = (Button) dialog.findViewById(R.id.calltrackingCi2);
+					dialogButton2.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent intent = new Intent(Intent.ACTION_VIEW, 
+									     Uri.parse("http://tracking.ci"));	
+								startActivity(intent);dialog.dismiss();
+							}
+						});
+				  }
+				});
+			}
 	 
 	 public void callMozCi(){
 		 	Button button = (Button) findViewById(R.id.mozci);
@@ -146,7 +254,17 @@ public class PhoneActivity extends Activity {
 
 								dialog.dismiss();
 							}
-						});						
+						});		
+					Button dialogButton2 = (Button) dialog.findViewById(R.id.callMozCI2);
+					dialogButton2.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent intent = new Intent(Intent.ACTION_VIEW, 
+									     Uri.parse("http://mozilla.ci"));	
+								startActivity(intent);dialog.dismiss();
+							}
+						});
+					
 				  }
 				});
 			}	
@@ -170,10 +288,54 @@ public class PhoneActivity extends Activity {
 						        Toast.makeText(getApplicationContext(), "Urban Motion United en cours d\'appel", Toast.LENGTH_SHORT).show();
 								dialog.dismiss();
 							}
-						});						
+						});
+					Button dialogButton2 = (Button) dialog.findViewById(R.id.callUMU2);
+					dialogButton2.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent intent = new Intent(Intent.ACTION_VIEW, 
+									     Uri.parse("http://urbanmotionunited.com"));	
+								startActivity(intent);dialog.dismiss();
+							}
+						});
 				  }
 				});
 			}	  		
+	 public void callMonti(){
+		 	Button button = (Button) findViewById(R.id.nim);
+				button.setOnClickListener(new OnClickListener() { 
+				  @Override
+				  public void onClick(View arg0) {
+					// custom dialog
+					final Dialog dialog = new Dialog(context);
+					dialog.setContentView(R.layout.pc_monti);
+					dialog.setTitle("Nicola Monti");
+					dialog.show();
+					Button dialogButton = (Button) dialog.findViewById(R.id.callMonti);
+					dialogButton.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent k = new Intent(android.content.Intent.ACTION_CALL, Uri.parse("tel:0022503156646"));
+						        startActivity(k);
+						        Toast.makeText(getApplicationContext(), "Nicola Monti en cours d\'appe", Toast.LENGTH_SHORT).show();
+								dialog.dismiss();
+							}
+						});
+					Button dialogButton2 = (Button) dialog.findViewById(R.id.callMonti2);
+					dialogButton2.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								Intent intent = new Intent(Intent.ACTION_VIEW, 
+									     Uri.parse("https://nimstudios.com"));	
+								startActivity(intent);dialog.dismiss();
+							}
+						});						
+				  
+				  }
+				});
+			}	  		
+
+	 
 	 public void clickHome(){
 			final Context context = this;
 			Button btnHome = (Button) findViewById(R.id.clickHome);
@@ -184,4 +346,8 @@ public class PhoneActivity extends Activity {
 	                startActivity(intent);  }
 			});
 	 }
+	
+	
 }
+
+

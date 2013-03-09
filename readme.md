@@ -6,7 +6,7 @@ Pr&eacute;sentation
 Une app basique pour android 2.3 + pour le coworkingspace d'AMN (http://amncoworkingspace.com)
 
 
-A venir dans la version 6
+A venir dans la version 7
 --------------------------
 
 - Ajout d'un Menu
@@ -18,9 +18,7 @@ A venir dans la version 6
 - Integration Facebook Connect;
 - Ajout du flux rss du Blog du CoworkingSpace;
 - Ajout de la section partenaires;
-- Ajout de la  le flux RSS du blog du coworkingspace;
-- Ajout d'une icone AMN
-- Remplacement TypeFace Open Sans par Droid Sans.
+- Ajout du flux RSS du blog du coworkingspace;
 
 Remerciements
 --------------------------

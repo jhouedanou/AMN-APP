@@ -106,6 +106,7 @@ public final class R {
     }
     public static final class string {
         public static final int AMN=0x7f050012;
+        public static final int Intelgeo=0x7f050013;
         public static final int adh=0x7f050007;
         public static final int app_name=0x7f050002;
         public static final int backhome=0x7f050015;
@@ -135,7 +136,6 @@ public final class R {
         public static final int startups=0x7f05000c;
         public static final int title_activity_main=0x7f050004;
         public static final int titre=0x7f050005;
-        public static final int tracking=0x7f050013;
         public static final int umu=0x7f05000e;
     }
     public static final class style {
